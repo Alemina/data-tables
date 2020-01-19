@@ -1,0 +1,22 @@
+<div>
+    <mat-table [dataSource]="dataSource">
+      <ng-container matColumnDef="userId">
+        <mat-header-cell *matHeaderCellDef> User Id </mat-header-cell>
+        <mat-cell *matCellDef="let article"> {{article.userId}} </mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="id">
+        <mat-header-cell *matHeaderCellDef> Id </mat-header-cell>
+        <mat-cell *matCellDef="let article"> {{article.id}} </mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="title">
+        <mat-header-cell *matHeaderCellDef> Title </mat-header-cell>
+        <mat-cell *matCellDef="let article"> {{article.title}} </mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="body">
+        <mat-header-cell *matHeaderCellDef> Body </mat-header-cell>
+        <mat-cell *matCellDef="let article"> {{article.body}} </mat-cell>
+      </ng-container>
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+  </div>
