@@ -10,7 +10,7 @@
         <ng-container matColumnDef="expandedDetail-body">
             <td mat-cell *matCellDef="let element" [attr.colspan]="displayedColumn.length">
                 <div class="expanded-element-body" [@detailExpand]="element == expandedElement ? 'expanded' : 'collapsed'">
-                    {{element.body}}
+                    Description: {{element.body}}
                 </div>
             </td>
         </ng-container>
