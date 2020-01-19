@@ -124,5 +124,10 @@
       }
     }
   },
-  "defaultProject": "data-tables"
+  "defaultProject": "data-tables",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

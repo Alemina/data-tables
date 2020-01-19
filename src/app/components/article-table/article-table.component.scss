@@ -1,0 +1,22 @@
+tr {
+    &.normal-row {
+        &:not(.expanded-row) {
+            &:hover {
+                background: #777;
+            }
+            &:active {
+                background: #efefef;
+            }
+        }
+        td {
+            border-bottom-width: 0;
+        }
+    }
+    &.detail-row {
+        height: 0;
+        .expanded-element-body {
+            overflow: hidden;
+            display: flex;
+        }
+    }
+}

@@ -8,7 +8,7 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
 @Component({
   selector: 'app-article-table',
   templateUrl: './article-table.component.html',
-  styleUrls: ['./article-table.component.css'],
+  styleUrls: ['./article-table.component.scss'],
   animations: [
     trigger('detailExpand', [
       state('collapsed', style({height: '0px', minHeight: '0'})),
